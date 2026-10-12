@@ -1,0 +1,33 @@
+package Urna;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int quant=0;
+		String cand="";
+		
+		quant = Integer.parseInt(JOptionPane.showInputDialog("Quantos candidatos participarão da disputa?"));
+		
+		String nomes [] = new String [quant];
+		
+		
+		
+			for (int c=0; c < quant; c++) {
+				
+				nomes [c] = JOptionPane.showInputDialog("Informe os nomes dos candidatos que participarão:");
+				
+				cand = cand + " " + nomes  [c] + ",";
+				
+			}
+			
+			JOptionPane.showMessageDialog(null,"Os candidatos são: "   + cand);
+		
+		
+		
+	}
+
+}
